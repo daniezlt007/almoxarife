@@ -32,11 +32,12 @@ require_once("config/banco_produto.php");
             <td><?= $produto['numero_nota']; ?></td>
             <td><?= $produto['status']; ?></td>
             <td><?= $produto['data']; ?></td>
-            <td align="center"><a class="btn btn-primary" href="marca-altera.php?id_produto=<?= $produto['id_produto']; ?>">alterar</a></td>
+            <td align="center"><a class="btn" href="marca-altera.php?id_produto=<?= $produto['id_produto']; ?>"><i class="fa fa-refresh"></i></a></td>
             <td align="center">
-                <form action="removeMarca.php" method="post">
+                <form action="removeProduto.php" method="post">
                     <input type="hidden" name="idProduto" value="<?= $produto['id_produto'] ?>">
-                    <button class="btn btn-danger">Remover</button>
+                    <!--<button class="btn btn-danger">Remover</button>-->
+					<button class="btn"><i class="fa fa-trash"></i></button>
                 </form>
             </td>
         </tr>    

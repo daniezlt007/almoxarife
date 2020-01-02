@@ -3,7 +3,7 @@
 <tr>
     <td>Filial*:</td>
             <td>
-                <select name="filial_codigo" class="form-control">
+                <select id="filial_codigo" name="filial_codigo" class="form-control">
                 <option value="0">Selecione uma Filial</option>
                 <?php
                     foreach ($filiais as $filial) :
@@ -18,7 +18,7 @@
 
             <td>Tipo Divergência*:</td>
             <td>
-                <select name="tipo_divergencia" class="form-control">
+                <select id="tipo_divergencia" name="tipo_divergencia" class="form-control">
                 <option value="0">Selecione um Tipo</option>
                 <?php
                     foreach ($tipos as $tipo) :
@@ -36,7 +36,7 @@
     <td>Item*:</td> 
     <td><input class="form-control" type="text" id="codigo_produto" name="codigo_produto" value="" required></td>
     <td>Quantidade*:</td> 
-    <td><input class="form-control" min="0" type="number" id="qtd" name="qtd" value="" required  pattern="[0-9]+$"></td>
+    <td><input class="form-control" min="0" type="text" id="qtd" name="qtd" value="" required  pattern="[0-9]+$"></td>
 </tr>
 <tr>
     <td>Nº Devolução*:</td> 
@@ -47,12 +47,14 @@
 <tr>
     <td>Nº Nf*:</td>
     <td><input class="form-control" type="text" id="numero_nota" name="numero_nota" value="" required></td>
+	
     <td>Item devolvido? *:</td>
-    <td><input class="form-check-input" type="checkbox" id="devolvido" name="devolvido" value="" required></td>
+    <td><input class="form-check-input" type="checkbox" id="devolvido" name="devolvido" value="1" ></td>
 </tr>
 <tr>
     <td>Retorno Fábrica*:</td>
     <td><textarea id="retorno_fabrica" name="retorno_fabrica" class="form-control"></textarea></td>
+	
     <td>Status*:</td>
     <td><textarea id="status" name="status" class="form-control"></textarea></td>
 </tr>

@@ -13,7 +13,7 @@ $filiais = listaFiliais($conexao);
         <?php include("produto_form_base.php");?>
         <tr>
             <td>
-                <button class="btn btn-primary" type="submit" onclick="teste()">Cadastrar</button>
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
             </td>
         </tr>
     </table>    
